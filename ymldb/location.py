@@ -3,10 +3,11 @@ Location Classes.
 
 In YMLDb, a location describes the path at which we can find an object.
 """
-
+import attr
 from typing import Sequence
 
 
+@attr.s(auto_attribs=True)
 class Location:
     """
     The location class.
@@ -16,15 +17,6 @@ class Location:
 
     container: Sequence[str]
     name: str
-
-    def __init__(
-        self,
-        *,
-        container: Sequence[str] = [],
-        name: str,
-    ) -> None:
-        self.container = container
-        self.name = name
 
     def __str__(self) -> str:
         """Get a string representation."""

@@ -10,6 +10,7 @@ repository = "https://github.com/pyinv/ymldb"
 [tool.poetry.dependencies]
 python = "^3.6"
 pydantic = "^0.32.1"
+attrs = "^19.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"
